@@ -16,7 +16,7 @@
 	export let index = 0;
 	export let value = 0;
 	export let title = '';
-	export let onDelete = () => {};
+	export let onDelete = (index: number) => {};
 </script>
 
 <div class="counter">

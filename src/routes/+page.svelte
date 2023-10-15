@@ -12,7 +12,7 @@
 	$: titleList = counters.map((counter) => counter.title).join(', ');
 	$: sum = counters
 		.map((counter) => counter.value)
-		.reduce((total, currentValue) => (total += currentValue));
+		.reduce((total, currentValue) => (total += currentValue), 0);
 
 	function handleAdd() {
 		counters = [
